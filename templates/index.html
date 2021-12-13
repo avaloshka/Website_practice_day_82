@@ -1,0 +1,168 @@
+{% extends "base.html" %}
+{% block title %}Alex Valoshka | Python Developer{% endblock %}
+
+{% block content %}
+    <p align='right'>
+        <a class="btn btn-outline-secondary button1" href="{{ url_for('contact_me') }}">Say Hello</a>
+    </p>
+    <div class="container is-centered">
+        <div class="container intro1">
+            <h1>Designer, Python Developer</h1>
+            <h5>I design and code beautifully simple things, and I love what I do.</h5>
+        </div>
+
+        <img class="avatar" src="/static/avatar_pic.svg" alt="">
+
+        <div>
+            <img class="computer-picture" src="/static/computer_workspace_setup.svg" alt="">
+        </div>
+    </div>
+
+    <div class="blue">
+
+        <div class="im_alex">
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <h3>
+            Hi, I’m Alex. Nice to meet you.
+            </h3>
+            <br/>
+        </div>
+
+        <div class="intro">
+                <h5>
+            Since beginning my journey as a freelance designer nearly 1 year ago, I've
+            done remote work for agencies, consulted for startups, and collaborated with
+            talented people to create digital products for both business and consumer use.
+            I'm quietly confident, naturally curious, and perpetually working on improving
+            my chops one design problem at a time.
+                </h5>
+        </div>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+    </div>
+
+
+<!--CARD-->
+
+<div class="card-group">
+<!--    CARD 1-->
+  <div class="card">
+      <br/>
+      <br/>
+    <img src="static/designer.svg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <br/>
+      <h5 class="card-title">Designer</h5>
+        <br/>
+      <p class="card-text">I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+      <p class="list-title">Things I enjoy designing:</p>
+              <p>Web</p>
+
+      <p class="list-title">Design Tools:</p>
+       <ul class="ul-style">
+            <li>Balsamiq Mockups</li>
+            <li>Pen & Paper</li>
+        </ul>
+    </div>
+  </div>
+
+<!--        CARD2-->
+    <div class="card">
+          <br/>
+          <br/>
+        <img src="static/frontend.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <br/>
+          <h5 class="card-title">Front-end Developer</h5>
+            <br/>
+          <p class="card-text">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+          <p class="list-title">Languages I speak:</p>
+                  <p>HTML, CSS, Python</p>
+
+          <p class="list-title">Dev Tools:</p>
+           <ul class="ul-style">
+                <li>Atom</li>
+                <li>Bootstrap</li>
+                <li>Github</li>
+                <li>Terminal</li>
+            </ul>
+        </div>
+      </div>
+
+    <!--CARD3-->
+    <div class="card">
+          <br/>
+          <br/>
+        <img src="static/mentor.svg" class="card-img-top" alt="...">
+        <div class="card-body">
+            <br/>
+          <h5 class="card-title">Python Developer</h5>
+            <br/>
+          <p class="card-text">I started my learning journey 1 year ago and I never looked back since. Programing is a fun
+          brain exercise; and creativity in programing is what I value the most. The chance to achieve goal in different ways truly fascinates me.</p>
+<!--            <p class="list-title"></p>-->
+<!--                  <p></p>-->
+          <p class="list-title">Courses Taken:</p>
+           <ul class="ul-style">
+                <li>
+                    <a href="https://www.amazon.co.uk/Python-Everybody-Exploring-Data-ebook/dp/B01IA5VIFM/ref=sr_1_1?crid=33DARDQRUKF6E&keywords=python+for+everybody&qid=1639076402&sprefix=python++for+ever%2Caps%2C155&sr=8-1">Python for everybody by Charles Severance</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/watch?v=8DvywoWv6fI">YouTube Python by C.Severance</a>
+                </li>
+                <li>
+                    <a href="https://www.udemy.com/course/100-days-of-code/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Python_v.PROF_la.EN_cc.UK_ti.7380&utm_content=deal4584&utm_term=_._ag_73899892513_._ad_532713166711_._kw__._de_c_._dm__._pl__._ti_dsa-774930046209_._li_9045971_._pd__._&matchtype=&gclid=CjwKCAiA78aNBhAlEiwA7B76p_s7hRrOGZEKAFAjzJ2l3Y0IHQuImudy9PR0hrs-w6gI1YrgB6W7XhoClloQAvD_BwE">100 days of code by Angela Yu</a>
+                </li>
+            </ul>
+        </div>
+      </div>
+</div>
+    <br/>
+<div class="recent-work">
+    <h1>My Recent Work</h1>
+    <br/>
+    <p>Here are a few projects I've worked on recently. <a href="https://github.com/avaloshka?tab=repositories">See my GitHub Repositories</a></p>
+    <br/>
+
+</div>
+
+    <br/>
+    <br/>
+
+<div class="interested">
+    <h3 class="interested">Interested in collaborating or investing?</h3>
+    <br/>
+    <p>I’m always open to discussing product design work or partnership opportunities.</p>
+
+
+        <a class="btn btn-light btn-sm contact-me" href="{{url_for('contact_me', form=form, name=name)}}">Contact me</a>
+
+    <br/>
+    <br/>
+</div>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{url_for('.static', filename='myscripts.js')}}"></script>
+    {{super()}}
+{% endblock %}

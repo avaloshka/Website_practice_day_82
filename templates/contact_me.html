@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}Alex Valoshka | Python Developer{% endblock %}
+
+{% block content %}
+
+<form method="POST">
+
+
+        {{ form.hidden_tag() }}
+
+    {{ form.name.label(class='form') }}
+    {{ form.name(class='form') }}
+    <br/>
+    <br/>
+    {{ form.email.label(class='form') }}
+    {{ form.email(class='form') }}
+    <br/>
+    <br/>
+    {{ form.message.label(class='form') }}
+    <br/>
+    {{ form.message(class='submit-field') }}
+    <br/>
+    <br/>
+    {{ form.submit(class='submit-button') }}
+
+
+</form>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{url_for('.static', filename='myscripts.js')}}"></script>
+    {{super()}}
+{% endblock %}

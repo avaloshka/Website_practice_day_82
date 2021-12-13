@@ -1,0 +1,125 @@
+body {
+    width: 100%;
+}
+
+.button1 {
+    border-radius: 12px;
+    background-color: white;
+    border-color: 3px;
+    border-color: #7C48E4;
+}
+
+.is-centered {
+    text-align: center;
+}
+
+.intro1 {
+    padding: 70px;
+    font-family: 'eurostile', sans-serif;
+}
+
+.computer-picture {
+    padding: 70px 0 0 0;
+}
+
+.blue {
+    background-color: #7510F7;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    font-family: 'eurostile', sans-serif;
+
+}
+
+.im_alex {
+    text-align: center;
+    color: white;
+    font-family: 'eurostile', sans-serif;
+}
+
+.intro {
+    text-align: center;
+    font-family: europa, sans-serif;
+    font-size: 20px;
+    color: white;
+    margin: 0 250px;
+}
+
+.card-group {
+    position: absolute;
+    padding-left: 0px;
+    padding-right: 75px;
+    padding-top: 500px;
+
+    }
+
+
+.card {
+    text-align: center;
+    display: block;
+}
+
+
+.card-img-top {
+    height: 50px;
+    width: 50px;
+}
+
+.list-title {
+    color: #7510F7;
+
+}
+
+.ul-style {
+    list-style-type: none;
+    padding-right: 30px;
+}
+
+.recent-work {
+    text-align: center;
+    padding-top: 1120px;
+    font-family: 'eurostile', sans-serif;
+
+}
+
+.btn-primary {
+    color: #7510F7;
+}
+
+.interested {
+    text-align: center;
+    font-family: 'eurostile', sans-serif;
+}
+
+.github-btn {
+
+
+}
+
+.contact-me {
+    text-align: center;
+    color: #0a58ca;
+    width: 10%;
+    height: 40px;
+    font-size: 16px;
+    font-family: 'eurostile', sans-serif;
+        border-color: 3px;
+    border-color: #7C48E4;
+}
+
+.form {
+    width: 200px;
+    text-align: left;
+
+}
+
+.submit-field {
+    height: 270px;
+    width: 100%;
+}
+
+.submit-button {
+    color: #7510F7;
+    border-color: #9FE2BF;
+}
